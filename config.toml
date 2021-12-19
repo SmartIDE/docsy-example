@@ -10,8 +10,8 @@ theme = ["docsy"]
 enableGitInfo = true
 
 # Language settings
-contentDir = "content/en"
-defaultContentLanguage = "en"
+contentDir = "content/zh"
+defaultContentLanguage = "zh-cn"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
@@ -69,27 +69,24 @@ id = "UA-00000000-0"
 # Language configuration
 
 [languages]
-[languages.en]
-title = "Goldydocs"
-description = "A Docsy example site"
-languageName ="English"
-# Weight used for sorting.
-weight = 1
-[languages.no]
-title = "Goldydocs"
-description = "Docsy er operativsystem for skyen"
-languageName ="Norsk"
-contentDir = "content/no"
-time_format_default = "02.01.2006"
-time_format_blog = "02.01.2006"
-
-[languages.fa]
-title = "اسناد گلدی"
-description = "یک نمونه برای پوسته داکسی"
-languageName ="فارسی"
-contentDir = "content/fa"
+[languages.zh-cn]
+title = "Docsy中文站点模板"
+description = "Docsy中文站点模板"
+languageName ="中文简体"
+contentDir = "content/zh"
 time_format_default = "2006.01.02"
 time_format_blog = "2006.01.02"
+# Weight used for sorting.
+weight = 1
+[languages.en]
+title = "Docsy Template"
+description = "Docsy Template"
+languageName ="English"
+contentDir = "content/en"
+time_format_default = "01.02.2006"
+time_format_blog = "01.02.2006"
+# Weight used for sorting.
+weight = 2
 
 [markup]
   [markup.goldmark]
@@ -133,9 +130,9 @@ version = "0.0"
 url_latest_version = "https://example.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/google/docsy-example"
+github_repo = "https://github.com/smartide/docsy-example"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/google/docsy"
+github_project_repo = "https://github.com/smartide/smartide-template"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
@@ -145,7 +142,7 @@ github_project_repo = "https://github.com/google/docsy"
 # github_branch= "main"
 
 # Google Custom Search Engine ID. Remove or comment out to disable search.
-gcs_engine_id = "d72aa9b2712488cc3"
+gcs_engine_id = ""
 
 # Enable Algolia DocSearch
 algolia_docsearch = false
