@@ -13,6 +13,10 @@ workspace:
     volumes: 
       git-config: true
       ssh-key: true
+    command:
+      - git submodule update --init --recursive
+      - npm install
+      - hugo server --bind 0.0.0.0 --disableFastRender --forceSyncStatic --buildDrafts --buildFuture 
       
   services:
     smartide-hugo-dev:
